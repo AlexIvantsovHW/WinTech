@@ -1,9 +1,12 @@
 import React from "react";
 import { imgs } from "../../../shared/images";
-import { Button, Fade, Menu, MenuItem } from "@mui/material";
+import { Button, Fade, Menu } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import { Link } from "react-router-dom";
 import { ROUTER } from "../../../routers";
+import {
+  routerLink,
+  routerLinkXl,
+} from "../../../shared/components/link-header/link-header";
 export const Header = () => {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
@@ -13,12 +16,13 @@ export const Header = () => {
   const handleClose = () => {
     setAnchorEl(null);
   };
+
   return (
     <div className=" w-full h-[72px] py-[16px]">
-      <div className="w-full h-[40px] flex justify-between items-center px-[16px]">
+      <div className="w-full h-[40px] flex justify-between items-center px-[16px] ">
         <img src={imgs.headerLogo} width={120} height={38} alt="logo" />
 
-        <div>
+        <div className="md:hidden">
           <Button
             id="fade-button"
             aria-controls={open ? "fade-menu" : undefined}
@@ -38,25 +42,38 @@ export const Header = () => {
             onClose={handleClose}
             TransitionComponent={Fade}
           >
-            <Link to={ROUTER.HOME}>
-              <MenuItem onClick={handleClose}>Home</MenuItem>
-            </Link>
-            <Link to={ROUTER.ABOUT_US}>
-              <MenuItem onClick={handleClose}>About us</MenuItem>
-            </Link>
-            <Link to={ROUTER.CONTACT}>
-              <MenuItem onClick={handleClose}>Contact</MenuItem>
-            </Link>
-            <Link to={ROUTER.NEWEST_GAMES}>
-              <MenuItem onClick={handleClose}>Newest games</MenuItem>
-            </Link>
-            <Link to={ROUTER.ALL_GAMES}>
-              <MenuItem onClick={handleClose}>All games</MenuItem>
-            </Link>
-            <Link to={ROUTER.HOTTEST_GAMES}>
-              <MenuItem onClick={handleClose}>Hottest games</MenuItem>
-            </Link>
+            {routerLink(ROUTER.HOME, "Home", handleClose)}
+            {routerLink(ROUTER.ABOUT_US, "About us", handleClose)}
+            {routerLink(ROUTER.CONTACT, "Contact", handleClose)}
+            {routerLink(ROUTER.NEWEST_GAMES, "Newest games", handleClose)}
+            {routerLink(ROUTER.ALL_GAMES, "All games", handleClose)}
+            {routerLink(ROUTER.HOTTEST_GAMES, "Hottest games", handleClose)}
           </Menu>
+        </div>
+        <div className="md:flex w-full justify-between">
+          {routerLinkXl(ROUTER.HOME, "Home")}
+          {routerLinkXl(ROUTER.ABOUT_US, "About us")}
+          {routerLinkXl(ROUTER.CONTACT, "Contact")}
+          {routerLinkXl(ROUTER.NEWEST_GAMES, "Newest games")}
+          {routerLinkXl(ROUTER.ALL_GAMES, "All games")}
+          {routerLinkXl(ROUTER.HOTTEST_GAMES, "Hottest games")}
+        </div>
+        <div className="md:flex">
+          <Button
+            variant="contained"
+            color="secondary"
+            style={{
+              height: "50px",
+              fontSize: "18px",
+              paddingLeft: "25px",
+              paddingRight: "25px",
+              paddingTop: "10px",
+              paddingBottom: "10px",
+              borderRadius: "25px",
+            }}
+          >
+            Create Account
+          </Button>
         </div>
       </div>
     </div>
