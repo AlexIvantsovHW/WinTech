@@ -1,17 +1,20 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { ROUTER } from "./routers";
+
+const Contact = React.lazy(() => import("./pages/contact/index"));
+const About = React.lazy(() => import("./pages/about/index"));
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p className="text-red-700">
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path={ROUTER.CONTACT} element={<Contact />} />
+          <Route path={ROUTER.ABOUT_US} element={<About />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
