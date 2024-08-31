@@ -63,21 +63,23 @@ export const Header = () => {
           {routerLinkXl(ROUTER.CONTACT, "Contact us", true)}
         </div>
         <div className="hidden lg:flex">
-          <Button
-            variant="contained"
-            color="secondary"
-            style={{
-              height: "50px",
-              fontSize: "18px",
-              paddingLeft: "15px",
-              paddingRight: "15px",
-              paddingTop: "10px",
-              paddingBottom: "10px",
-              borderRadius: "25px",
-            }}
-          >
-            Create Account
-          </Button>
+          <Link to={ROUTER.REGISTER}>
+            <Button
+              variant="contained"
+              color="secondary"
+              style={{
+                height: "50px",
+                fontSize: "18px",
+                paddingLeft: "15px",
+                paddingRight: "15px",
+                paddingTop: "10px",
+                paddingBottom: "10px",
+                borderRadius: "25px",
+              }}
+            >
+              Create Account
+            </Button>
+          </Link>
         </div>
       </div>
     </div>

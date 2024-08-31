@@ -8,4 +8,5 @@ export enum ROUTER {
   CONTACT_US = "/contact-us",
   TERMS = "/terms-conditions",
   COOKIES = "/privacy-policy-cookies",
+  REGISTER = "/register",
 }
