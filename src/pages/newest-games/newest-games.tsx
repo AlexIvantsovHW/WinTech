@@ -13,13 +13,14 @@ const NewestGames = () => {
             lineHeight: "1.2",
             textTransform: "capitalize",
             textAlign: "center",
+            fontWeight: "bold",
           }}
         >
-          HottestGames
+          Discover and play the newest social casino games here!
         </h1>
         <p className="text-[16px] text-center font-bold">
-          Unveil Gaming Excellence Right Here. Immerse Yourself in a Premier
-          Selection of Games for Endless Entertainment!
+          Experience the latest and most thrilling games at Rocket Jackpots.
+          Dive into a universe of new adventures and excitement!
         </p>
       </div>
       <RocketLayout />

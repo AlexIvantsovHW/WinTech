@@ -47,20 +47,20 @@ export const Header = () => {
             TransitionComponent={Fade}
           >
             {routerLink(ROUTER.HOME, "Home", handleClose)}
-            {routerLink(ROUTER.ABOUT_US, "About us", handleClose)}
-            {routerLink(ROUTER.CONTACT, "Contact us", handleClose)}
+            {routerLink(ROUTER.HOTTEST_GAMES, "Hottest games", handleClose)}
             {routerLink(ROUTER.NEWEST_GAMES, "Newest games", handleClose)}
             {routerLink(ROUTER.ALL_GAMES, "All games", handleClose)}
-            {routerLink(ROUTER.HOTTEST_GAMES, "Hottest games", handleClose)}
+            {routerLink(ROUTER.ABOUT_US, "About us", handleClose)}
+            {routerLink(ROUTER.CONTACT, "Contact us", handleClose)}
           </Menu>
         </div>
         <div className="hidden lg:flex max-w-[637px] gap-[15px] justify-center ">
           {routerLinkXl(ROUTER.HOME, "Home", true)}
-          {routerLinkXl(ROUTER.ABOUT_US, "About us", true)}
-          {routerLinkXl(ROUTER.CONTACT, "Contact us", true)}
+          {routerLinkXl(ROUTER.HOTTEST_GAMES, "Hottest games", true)}
           {routerLinkXl(ROUTER.NEWEST_GAMES, "Newest games", true)}
           {routerLinkXl(ROUTER.ALL_GAMES, "All games", true)}
-          {routerLinkXl(ROUTER.HOTTEST_GAMES, "Hottest games", true)}
+          {routerLinkXl(ROUTER.ABOUT_US, "About us", true)}
+          {routerLinkXl(ROUTER.CONTACT, "Contact us", true)}
         </div>
         <div className="hidden lg:flex">
           <Button

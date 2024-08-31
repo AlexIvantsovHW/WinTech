@@ -13,6 +13,7 @@ const About = () => {
             lineHeight: "1.2",
             textTransform: "capitalize",
             textAlign: "center",
+            fontWeight: "bold",
           }}
         >
           ABOUT US

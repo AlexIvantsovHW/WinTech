@@ -13,6 +13,7 @@ const HottestGames = () => {
             lineHeight: "1.2",
             textTransform: "capitalize",
             textAlign: "center",
+            fontWeight: "bold",
           }}
         >
           Explore the most thrilling games right here!

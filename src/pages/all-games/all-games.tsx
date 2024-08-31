@@ -13,6 +13,7 @@ const AllGames = () => {
             lineHeight: "1.2",
             textTransform: "capitalize",
             textAlign: "center",
+            fontWeight: "bold",
           }}
         >
           Explore the Galaxy of Games at Rocket Jackpots
