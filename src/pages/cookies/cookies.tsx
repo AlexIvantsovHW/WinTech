@@ -2,7 +2,7 @@ import React from "react";
 
 import { RocketLayout } from "../../widget/layouts/rocket-layout";
 
-import { TermsWidget } from "../../widget/terms-widget";
+import { CookiesWidget } from "../../widget/cookies-widget";
 
 const Cookies = () => {
   return (
@@ -25,7 +25,7 @@ const Cookies = () => {
         </p>
       </div>
       <RocketLayout />
-      <TermsWidget />
+      <CookiesWidget />
     </div>
   );
 };

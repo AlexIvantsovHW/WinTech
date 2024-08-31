@@ -4,104 +4,162 @@ export const TermsText = () => {
     <div className="bg-white text-black w-full h-fit py-[40px]">
       <div className="w-full h-fit px-[10px] flex flex-col gap-[30px]">
         <p className="font-bold text-[18px]">
-          Your Privacy Matters: Learn How We Handle Your Data and Use Cookies
-          Responsibly
+          Explore Our Terms and Conditions
         </p>
         <p className="text-[16px]">
-          At Rocket Jackpots, we prioritize your privacy and data security. We
-          are dedicated to protecting your personal information when you use our
-          social casino platform. This Cookies and Privacy Policy outlines how
-          we collect, use, and safeguard your data. By accessing or using Rocket
-          Jackpots, you agree to the terms outlined below.
+          Welcome to Rocket Jackpots, your ultimate destination for immersive
+          social casino gaming. Before you begin your adventure through the vast
+          universe of Rocket Jackpots, we kindly ask you to review and
+          familiarize yourself with the following Terms and Conditions. By
+          accessing and using our services, you agree to adhere to these terms,
+          ensuring a secure, enjoyable, and responsible gaming experience for
+          all players.
         </p>
 
-        <p className="font-bold text-[18px]">Information We Collect</p>
+        <p className="font-bold text-[18px]"> User Agreement</p>
         <ul className="list-disc pl-5 flex flex-col gap-[15px]">
           <li className="ml-[15px]">
-            Personal Information: When you register an account, we collect basic
-            details like your name, email address, and date of birth.
+            To use our services, you must be of legal age in your jurisdiction.
           </li>
           <li className="ml-[15px]">
-            Usage Information: We gather data on your interactions with Rocket
-            Jackpots, including gaming activity, device details, IP address, and
-            browser type.
+            Your use of Rocket Jackpots must comply with all applicable laws and
+            regulations.
           </li>
           <li className="ml-[15px]">
-            Cookies: Rocket Jackpots uses cookies to enhance your user
-            experience. These are small text files stored on your device to
-            improve our services and provide personalized experiences.
+            We reserve the right to suspend or terminate accounts that violate
+            our terms.
           </li>
         </ul>
 
-        <p className="font-bold text-[18px]"> How We Use Your Information</p>
+        <p className="font-bold text-[18px]"> Account Registration</p>
         <ul className="list-disc pl-5 flex flex-col gap-[15px]">
           <li className="ml-[15px]">
-            Personalization: We use your information to personalize your gaming
-            experience, suggest games, and customize promotions based on your
-            preferences.
+            Safeguard the confidentiality of your account information.
           </li>
           <li className="ml-[15px]">
-            Security: Your data helps us maintain a secure gaming environment,
-            prevent fraud, and protect against unauthorized access.
-          </li>
-          <li className="ml-[15px]">
-            Communications: We may contact you with important updates,
-            promotions, and news related to Rocket Jackpots.
+            Do not share your login credentials and report any unauthorized
+            access promptly.
           </li>
         </ul>
 
-        <p className="font-bold text-[18px]">
-          Third-Party Services and Cookies
-        </p>
+        <p className="font-bold text-[18px]"> Responsible Gaming</p>
         <ul className="list-disc pl-5 flex flex-col gap-[15px]">
           <li className="ml-[15px]">
-            Rocket Jackpots may utilize third-party services and cookies for
-            analytics, advertising, and other purposes. These services may
-            collect data on your online activities and are governed by their own
-            privacy policies.
+            Rocket Jackpots promotes responsible gaming. Establish limits on
+            deposits, losses, and gaming sessions.
+          </li>
+          <li className="ml-[15px]">
+            Self-exclusion options are available upon request.
+          </li>
+          <li className="ml-[15px]">
+            Seek assistance if you suspect you have a gaming problem.
           </li>
         </ul>
-        <p className="font-bold text-[18px]">Data Security</p>
+        <p className="font-bold text-[18px]">Privacy and Security</p>
         <ul className="list-disc pl-5 flex flex-col gap-[15px]">
           <li className="ml-[15px]">
-            We employ industry-standard security measures to protect your data
-            from unauthorized access, disclosure, alteration, or destruction.
+            Your privacy is paramount to us. Please refer to our Privacy Policy
+            for detailed information.
+          </li>
+          <li className="ml-[15px]">
+            Space Jackpots employs robust security measures to safeguard your
+            data.
           </li>
         </ul>
-        <p className="font-bold text-[18px]"> Your Choices</p>
+        <p className="font-bold text-[18px]"> Responsible Gaming</p>
         <ul className="list-disc pl-5 flex flex-col gap-[15px]">
           <li className="ml-[15px]">
-            You have the right to access, correct, or delete your personal
-            information.
+            Rocket Jackpots promotes responsible gaming. Establish limits on
+            deposits, losses, and gaming sessions.
           </li>
           <li className="ml-[15px]">
-            You can manage cookie preferences through your browser settings.
+            Self-exclusion options are available upon request.
           </li>
           <li className="ml-[15px]">
-            You can unsubscribe from marketing communications at any time.
+            Seek assistance if you suspect you have a gaming problem.
           </li>
         </ul>
-        <p className="font-bold text-[18px]">Children’s Privacy</p>
+        <p className="font-bold text-[18px]">Privacy and Security</p>
         <ul className="list-disc pl-5 flex flex-col gap-[15px]">
           <li className="ml-[15px]">
-            Rocket Jackpots is intended for adult audiences. We do not knowingly
-            collect or store personal information from individuals under the
-            legal age in their jurisdiction.
+            Your privacy is paramount to us. Please refer to our Privacy Policy
+            for detailed information.
+          </li>
+          <li className="ml-[15px]">
+            Space Jackpots employs robust security measures to safeguard your
+            data.
           </li>
         </ul>
-        <p className="font-bold text-[18px]">Changes to this Policy</p>
+        <p className="font-bold text-[18px]">Bonuses and Promotions</p>
         <ul className="list-disc pl-5 flex flex-col gap-[15px]">
           <li className="ml-[15px]">
-            We may update this Cookies and Privacy Policy periodically. The
-            latest version will be posted on our website, and we recommend
-            reviewing it regularly.
+            Bonuses are subject to specific wagering requirements outlined in
+            our Bonus Terms.
+          </li>
+          <li className="ml-[15px]">
+            Misuse of bonuses may result in account suspension.
           </li>
         </ul>
-
+        <p className="font-bold text-[18px]">Dispute Resolution</p>
+        <ul className="list-disc pl-5 flex flex-col gap-[15px]">
+          <li className="ml-[15px]">
+            Contact our customer support team for assistance with resolving
+            disputes.
+          </li>
+          <li className="ml-[15px]">
+            If an issue persists, you may escalate it following our Dispute
+            Resolution Procedure.
+          </li>
+        </ul>
+        <p className="font-bold text-[18px]">Termination and Account Closure</p>
+        <ul className="list-disc pl-5 flex flex-col gap-[15px]">
+          <li className="ml-[15px]">
+            Rocket Jackpots reserves the right to close accounts for violations
+            of our terms.
+          </li>
+          <li className="ml-[15px]">
+            We may also terminate services at our discretion.
+          </li>
+        </ul>
+        <p className="font-bold text-[18px]">Intellectual Property</p>
+        <ul className="list-disc pl-5 flex flex-col gap-[15px]">
+          <li className="ml-[15px]">
+            All content on Rocket Jackpots is protected by intellectual property
+            laws.
+          </li>
+          <li className="ml-[15px]">
+            Reproduction, distribution, or modification of our content without
+            permission is prohibited.
+          </li>
+        </ul>
+        <p className="font-bold text-[18px]">Changes to Terms and Conditions</p>
+        <ul className="list-disc pl-5 flex flex-col gap-[15px]">
+          <li className="ml-[15px]">
+            Periodically review this page for updates to our terms.
+          </li>
+        </ul>
+        <p className="font-bold text-[18px]">Limitation of Liability</p>
+        <ul className="list-disc pl-5 flex flex-col gap-[15px]">
+          <li className="ml-[15px]">
+            Rocket Jackpots is not liable for any losses, damages, or
+            interruptions.
+          </li>
+          <li className="ml-[15px]">
+            We do not assume responsibility for user-generated content.
+          </li>
+        </ul>
+        <p className="font-bold text-[18px]">Governing Law</p>
+        <ul className="list-disc pl-5 flex flex-col gap-[15px]">
+          <li className="ml-[15px]">
+            These terms are governed by the laws applicable in our jurisdiction.
+          </li>
+        </ul>
         <p className="text-[16px]">
-          Your trust is essential to us. By using Rocket Jackpots, you consent
-          to the terms outlined in this Cookies and Privacy Policy. Enjoy a safe
-          and secure gaming experience with us.
+          By using Rocket Jackpots, you acknowledge that you have read,
+          understood, and agreed to these Terms and Conditions. If you do not
+          agree with any part of these terms, please refrain from using our
+          services. Embark on your cosmic adventure responsibly and enjoy an
+          exceptional gaming experience at Rocket Jackpots!
         </p>
       </div>
     </div>
