@@ -7,6 +7,7 @@ export const AllGamesSkeleton = () => {
   return (
     <>
       <AllGamesBlock />
+
       <WhyChooseUs />
     </>
   );

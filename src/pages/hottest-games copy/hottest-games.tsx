@@ -1,9 +1,9 @@
 import React from "react";
 
 import { RocketLayout } from "../../widget/layouts/rocket-layout";
-import { AllGamesWidget } from "../../widget/newest-games-widget/all-games-widget";
+import { NewestGamesWidget } from "../../widget/all-games-widget/newest-games-widget";
 
-const AllGames = () => {
+const HottestGames = () => {
   return (
     <div className="text-white font-[25px] min-h-fit flex flex-col justify-center items-center mt-[40px]">
       <div className="max-w-[592px] flex flex-col justify-around items-center gap-[20px] mb-[40px]">
@@ -15,7 +15,7 @@ const AllGames = () => {
             textAlign: "center",
           }}
         >
-          Explore the Galaxy of Games at Rocket Jackpots
+          HottestGames
         </h1>
         <p className="text-[16px] text-center font-bold">
           Unveil Gaming Excellence Right Here. Immerse Yourself in a Premier
@@ -23,8 +23,8 @@ const AllGames = () => {
         </p>
       </div>
       <RocketLayout />
-      <AllGamesWidget />
+      <NewestGamesWidget />
     </div>
   );
 };
-export default AllGames;
+export default HottestGames;
