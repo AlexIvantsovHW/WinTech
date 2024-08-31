@@ -18,7 +18,7 @@ export const Footer = () => {
           {routerLinkXl(ROUTER.COOKIES, "Cookies & Privacy", false)}
           {routerLinkXl(ROUTER.TERMS, "Terms & Conditions", false)}
         </div>
-        <p className="text-center md:mx-[80px] font-[16px]">
+        <p className="text-center md:mx-[80px] font-[16px] text-slate-400">
           <a
             href="https://www.pragmaticplay.com/en/"
             className="text-purple-600 underline"
@@ -38,7 +38,7 @@ export const Footer = () => {
         <div className="flex justify-center items-center mx-[80px] ">
           <img src={imgs.footerImg} alt="footer img" />
         </div>
-        <div className="flex justify-center items-center mx-[80px]">
+        <div className="flex justify-center items-center md:mx-[80px]">
           Rocekt Jackpots © 2023 All Rights Reserved
         </div>
       </div>

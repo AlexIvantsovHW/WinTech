@@ -7,6 +7,7 @@ import {
   routerLink,
   routerLinkXl,
 } from "../../../shared/components/link-header/link-header";
+import { Link } from "react-router-dom";
 export const Header = () => {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
@@ -20,7 +21,10 @@ export const Header = () => {
   return (
     <div className=" w-full h-[72px] py-[16px]">
       <div className="w-full h-[40px] flex justify-between items-center px-[16px] ">
-        <img src={imgs.headerLogo} width={120} height={38} alt="logo" />
+        <Link to={ROUTER.HOME}>
+          {" "}
+          <img src={imgs.headerLogo} width={120} height={38} alt="logo" />
+        </Link>
 
         <div className="lg:hidden">
           <Button
@@ -44,7 +48,7 @@ export const Header = () => {
           >
             {routerLink(ROUTER.HOME, "Home", handleClose)}
             {routerLink(ROUTER.ABOUT_US, "About us", handleClose)}
-            {routerLink(ROUTER.CONTACT, "Contact", handleClose)}
+            {routerLink(ROUTER.CONTACT, "Contact us", handleClose)}
             {routerLink(ROUTER.NEWEST_GAMES, "Newest games", handleClose)}
             {routerLink(ROUTER.ALL_GAMES, "All games", handleClose)}
             {routerLink(ROUTER.HOTTEST_GAMES, "Hottest games", handleClose)}
@@ -53,7 +57,7 @@ export const Header = () => {
         <div className="hidden lg:flex max-w-[637px] gap-[15px] justify-center ">
           {routerLinkXl(ROUTER.HOME, "Home", true)}
           {routerLinkXl(ROUTER.ABOUT_US, "About us", true)}
-          {routerLinkXl(ROUTER.CONTACT, "Contact", true)}
+          {routerLinkXl(ROUTER.CONTACT, "Contact us", true)}
           {routerLinkXl(ROUTER.NEWEST_GAMES, "Newest games", true)}
           {routerLinkXl(ROUTER.ALL_GAMES, "All games", true)}
           {routerLinkXl(ROUTER.HOTTEST_GAMES, "Hottest games", true)}
