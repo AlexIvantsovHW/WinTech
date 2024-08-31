@@ -9,6 +9,8 @@ const About = React.lazy(() => import("./pages/about/index"));
 const NewestGames = React.lazy(() => import("./pages/newest-games/index"));
 const HottestGames = React.lazy(() => import("./pages/hottest-games/index"));
 const AllGames = React.lazy(() => import("./pages/all-games/index"));
+const Cookies = React.lazy(() => import("./pages/cookies/index"));
+const Terms = React.lazy(() => import("./pages/terms/index"));
 
 const Home = React.lazy(() => import("./pages/home/index"));
 
@@ -24,6 +26,8 @@ function App() {
             {routeComponent(ROUTER.NEWEST_GAMES, NewestGames)}
             {routeComponent(ROUTER.ALL_GAMES, AllGames)}
             {routeComponent(ROUTER.HOTTEST_GAMES, HottestGames)}
+            {routeComponent(ROUTER.COOKIES, Cookies)}
+            {routeComponent(ROUTER.TERMS, Terms)}
           </Routes>
         </div>
       </BaseLayout>

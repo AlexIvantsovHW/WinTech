@@ -22,7 +22,7 @@ export const Header = () => {
       <div className="w-full h-[40px] flex justify-between items-center px-[16px] ">
         <img src={imgs.headerLogo} width={120} height={38} alt="logo" />
 
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <Button
             id="fade-button"
             aria-controls={open ? "fade-menu" : undefined}
@@ -50,23 +50,23 @@ export const Header = () => {
             {routerLink(ROUTER.HOTTEST_GAMES, "Hottest games", handleClose)}
           </Menu>
         </div>
-        <div className="md:flex w-full justify-between">
-          {routerLinkXl(ROUTER.HOME, "Home")}
-          {routerLinkXl(ROUTER.ABOUT_US, "About us")}
-          {routerLinkXl(ROUTER.CONTACT, "Contact")}
-          {routerLinkXl(ROUTER.NEWEST_GAMES, "Newest games")}
-          {routerLinkXl(ROUTER.ALL_GAMES, "All games")}
-          {routerLinkXl(ROUTER.HOTTEST_GAMES, "Hottest games")}
+        <div className="hidden lg:flex max-w-[637px] gap-[15px] justify-center ">
+          {routerLinkXl(ROUTER.HOME, "Home", true)}
+          {routerLinkXl(ROUTER.ABOUT_US, "About us", true)}
+          {routerLinkXl(ROUTER.CONTACT, "Contact", true)}
+          {routerLinkXl(ROUTER.NEWEST_GAMES, "Newest games", true)}
+          {routerLinkXl(ROUTER.ALL_GAMES, "All games", true)}
+          {routerLinkXl(ROUTER.HOTTEST_GAMES, "Hottest games", true)}
         </div>
-        <div className="md:flex">
+        <div className="hidden lg:flex">
           <Button
             variant="contained"
             color="secondary"
             style={{
               height: "50px",
               fontSize: "18px",
-              paddingLeft: "25px",
-              paddingRight: "25px",
+              paddingLeft: "15px",
+              paddingRight: "15px",
               paddingTop: "10px",
               paddingBottom: "10px",
               borderRadius: "25px",

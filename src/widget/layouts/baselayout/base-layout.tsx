@@ -1,6 +1,7 @@
 import React, { ReactNode } from "react";
 import { Header } from "../header";
 import { imgs } from "../../../shared/images";
+import { Footer } from "../footer";
 
 export const BaseLayout = ({
   children,
@@ -20,7 +21,8 @@ export const BaseLayout = ({
       }}
     >
       <Header />
-      {children}
+      <div className="flex-grow">{children}</div>
+      <Footer />
     </div>
   );
 };

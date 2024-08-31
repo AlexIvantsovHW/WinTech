@@ -7,4 +7,5 @@ export enum ROUTER {
   ABOUT_US = "/about-us",
   CONTACT_US = "/contact-us",
   TERMS = "/terms-conditions",
+  COOKIES = "/privacy-policy-cookies",
 }
