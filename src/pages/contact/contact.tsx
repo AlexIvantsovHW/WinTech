@@ -25,7 +25,7 @@ const Contact = () => {
         </p>
       </div>
       <RocketLayout />
-      {/* <AllGamesWidget /> */}
+
       <ContactWidget />
     </div>
   );
