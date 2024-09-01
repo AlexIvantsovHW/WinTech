@@ -26,8 +26,6 @@ export const RegisterWidget = () => {
   const navigate = useNavigate();
   const onSubmit = async (data: registerFormType) => {
     try {
-      console.log(data);
-
       const response = await axios.post(`${baseUrl}register`, data);
       console.log(`response`, response);
       setSuccessMessage("User created successfully");
