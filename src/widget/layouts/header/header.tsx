@@ -7,8 +7,10 @@ import {
   routerLink,
   routerLinkXl,
 } from "../../../shared/components/link-header/link-header";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 export const Header = () => {
+  const location = useLocation();
+  const block = location.pathname === "/";
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
   const handleClick = (event: React.MouseEvent<HTMLElement>) => {
@@ -21,7 +23,7 @@ export const Header = () => {
   return (
     <div className=" w-full h-[72px] py-[16px]">
       <div className="w-full h-[40px] flex justify-between items-center px-[16px] ">
-        <Link to={ROUTER.HOME}>
+        <Link to={ROUTER.HOME} style={{ display: block ? "none" : "flex" }}>
           {" "}
           <img src={imgs.headerLogo} width={120} height={38} alt="logo" />
         </Link>
@@ -54,7 +56,11 @@ export const Header = () => {
             {routerLink(ROUTER.CONTACT, "Contact us", handleClose)}
           </Menu>
         </div>
-        <div className="hidden lg:flex max-w-[637px] gap-[15px] justify-center ">
+        <div
+          className={`hidden lg:flex  gap-[15px] justify-center ${
+            block ? "w-full max-w-full" : "max-w-[637px]"
+          }`}
+        >
           {routerLinkXl(ROUTER.HOME, "Home", true)}
           {routerLinkXl(ROUTER.HOTTEST_GAMES, "Hottest games", true)}
           {routerLinkXl(ROUTER.NEWEST_GAMES, "Newest games", true)}
@@ -62,7 +68,10 @@ export const Header = () => {
           {routerLinkXl(ROUTER.ABOUT_US, "About us", true)}
           {routerLinkXl(ROUTER.CONTACT, "Contact us", true)}
         </div>
-        <div className="hidden lg:flex">
+        <div
+          className={`hidden lg:flex `}
+          style={{ display: block ? "none" : "flex" }}
+        >
           <Link to={ROUTER.REGISTER}>
             <Button
               variant="contained"
