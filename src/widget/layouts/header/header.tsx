@@ -7,12 +7,14 @@ import {
   routerLink,
   routerLinkXl,
 } from "../../../shared/components/link-header/link-header";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 export const Header = () => {
   const location = useLocation();
   const block = location.pathname === "/";
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
+  const token = localStorage.getItem("token") === "" ? false : true;
+  const navigate = useNavigate();
   const handleClick = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);
   };
@@ -72,10 +74,14 @@ export const Header = () => {
           className={`hidden lg:flex `}
           style={{ display: block ? "none" : "flex" }}
         >
-          <Link to={ROUTER.REGISTER}>
+          {token ? (
             <Button
               variant="contained"
-              color="secondary"
+              onClick={() => {
+                localStorage.setItem("token", "");
+                navigate(ROUTER.HOME);
+              }}
+              color="warning"
               style={{
                 height: "50px",
                 fontSize: "18px",
@@ -86,9 +92,27 @@ export const Header = () => {
                 borderRadius: "25px",
               }}
             >
-              Create Account
+              Log out
             </Button>
-          </Link>
+          ) : (
+            <Link to={ROUTER.REGISTER}>
+              <Button
+                variant="contained"
+                color="secondary"
+                style={{
+                  height: "50px",
+                  fontSize: "18px",
+                  paddingLeft: "15px",
+                  paddingRight: "15px",
+                  paddingTop: "10px",
+                  paddingBottom: "10px",
+                  borderRadius: "25px",
+                }}
+              >
+                Create Account
+              </Button>
+            </Link>
+          )}
         </div>
       </div>
     </div>

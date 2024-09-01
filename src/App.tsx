@@ -14,7 +14,7 @@ const Terms = React.lazy(() => import("./pages/terms/index"));
 const Register = React.lazy(() => import("./pages/register/index"));
 
 const Home = React.lazy(() => import("./pages/home/index"));
-
+localStorage.setItem("token", "");
 function App() {
   return (
     <Router>
